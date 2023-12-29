@@ -1,10 +1,7 @@
 name: Events Demo 1
 on: 
-  push:
-    branches:
-        - 'main'
-    paths:
-        - '**.html'
+  pull_request:
+    types: [opened, labeled]
 jobs:
   deploy:
     runs-on: ubuntu-latest
